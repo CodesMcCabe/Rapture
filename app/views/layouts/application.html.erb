@@ -6,9 +6,14 @@
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
+    <style>
+      * { padding: 0; margin: 0; }
+      canvas { background: #eee; display: block; margin: 0 auto; }
+    </style>
   </head>
 
   <body>
+    <canvas id="myCanvas" width="480" height="320"></canvas>
     <%= yield %>
   </body>
 </html>
